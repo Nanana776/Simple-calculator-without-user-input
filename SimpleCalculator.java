@@ -28,9 +28,14 @@ public class SimpleCalculator {
         return Math.pow(a, b);
     }
 
-    public static double sqrt(double num1) {
-        return Math.pow(num1, 1.0/2);
+    public static double sqrt(double a) {
+        if (a<0) {
+            System.out.println("Can't calculate root of negative number");
+            return Double.NaN;
+        } else{
+        return Math.sqrt(a);
     }
+}
 
     public static void main(String[] args) {
         
