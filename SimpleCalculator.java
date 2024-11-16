@@ -9,11 +9,15 @@ public class SimpleCalculator {
         double difference=subtract(num1, num2);
         double product=multiply(num1, num2);
         double quotient=divide(num1, num2);
+        double power=pow(num1, num2);
+        double root=sqrt(num1);
 
         System.out.println("Addition: " + sum);
         System.out.println("Subtraction: " + difference);
         System.out.println("Multiplication: " + product);
         System.out.println("Division: " + quotient);
+        System.out.println("Power: " + power);
+        System.out.println("Square root: " + root);
     }
     
     
@@ -41,4 +45,13 @@ public class SimpleCalculator {
             return 0;
         }
     }
+    public static double pow(double a, double b) {
+        return Math.pow(a, b);
+    }
+
+    public static double sqrt(double num1) {
+        return Math.pow(num1, 1.0/2);
+    }
+
+    
 }
