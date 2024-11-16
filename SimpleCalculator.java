@@ -51,5 +51,4 @@ public class SimpleCalculator {
         System.out.println("Power: " + power);
         System.out.println("Square root: " + root);
     }
-    
 }
